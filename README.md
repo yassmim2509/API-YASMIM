@@ -1,4 +1,4 @@
-O que a aplicação faz? Quais são seus principais recursos? APP.JS
+# O que a aplicação faz? Quais são seus principais recursos? APP.JS
 Este código JavaScript, utilizando o Express.js, Axios e a API do OpenWeatherMap, permite obter informações meteorológicas de uma cidade específica. A aplicação escuta na porta 3000 e possui uma rota GET (/climatempo/:cidade) que recebe o nome de uma cidade como parâmetro e faz uma requisição para a API do OpenWeatherMap para obter informações sobre o clima atual da cidade especificada.
 
 O código processa os dados recebidos da API, formatando a descrição do clima para ter a primeira letra em maiúscula, construindo URLs para os ícones do clima e das bandeiras dos países, e envia as informações meteorológicas relevantes de volta para o cliente no formato JSON.
