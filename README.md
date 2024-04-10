@@ -1,14 +1,14 @@
 # O que a aplicação faz? Quais são seus principais recursos? APP.JS #
-Este código JavaScript, utilizando o Express.js, Axios e a API do OpenWeatherMap, *permite obter informações meteorológicas de uma cidade específica*. A aplicação escuta na porta 3000 e possui uma rota GET (/climatempo/:cidade) que recebe o nome de uma cidade como parâmetro e **faz uma requisição para a API do OpenWeatherMap para obter informações sobre o clima atual da cidade especificada.**
+Este código JavaScript, utilizando o Express.js, Axios e a API do OpenWeatherMap, **permite obter informações meteorológicas de uma cidade específica**. A aplicação escuta na porta 3000 e possui uma rota GET (/climatempo/:cidade) que recebe o nome de uma cidade como parâmetro e **faz uma requisição para a API do OpenWeatherMap para obter informações sobre o clima atual da cidade especificada.**
 
-O código processa os dados recebidos da API, formatando a descrição do clima para ter a primeira letra em maiúscula, construindo URLs para os ícones do clima e das bandeiras dos países, e envia as informações meteorológicas relevantes de volta para o cliente no formato JSON.
+**O código processa os dados recebidos da API, formatando a descrição do clima para ter a primeira letra em maiúscula, construindo URLs para os ícones do clima e das bandeiras dos países, e envia as informações meteorológicas relevantes de volta para o cliente no formato JSON.**
 
-Além disso, o código lida com possíveis erros que podem ocorrer durante a obtenção dos dados meteorológicos, como erros de requisição ou erros internos do servidor, retornando mensagens de erro apropriadas para o cliente.
+Além disso, o código lida com possíveis erros que podem ocorrer durante a obtenção dos dados meteorológicos, **como erros de requisição ou erros internos do servidor, retornando mensagens de erro apropriadas para o cliente.**
 
 A aplicação também utiliza o framework Express.js para criar um servidor HTTP, define o middleware CORS para permitir requisições de origens diferentes, e configura rotas para servir arquivos estáticos na pasta public (possivelmente contendo a interface do usuário).
 
-Em resumo, esta aplicação atua como uma ponte entre uma interface do usuário (cliente) e a API do OpenWeatherMap, fornecendo acesso fácil e formatado às informações meteorológicas de uma cidade específica.
-README
+**Em resumo, esta aplicação atua como uma ponte entre uma interface do usuário (cliente) e a API do OpenWeatherMap, fornecendo acesso fácil e formatado às informações meteorológicas de uma cidade específica.**
+# README #
 Clima App
 Este é um aplicativo simples que permite ao usuário buscar informações meteorológicas de uma cidade específica. O aplicativo utiliza HTML, CSS e JavaScript para criar uma interface simples e intuitiva.
 
