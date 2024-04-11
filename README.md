@@ -246,6 +246,7 @@ app.get("/climatempo/:cidade", async (req, res) => {
 </main> 
 -->
 
+
 ## script.js
 // Adiciona um ouvinte de evento para o formulário de clima quando é enviado
 document.getElementById("formClima").addEventListener("submit", function (event) {
