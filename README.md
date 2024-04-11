@@ -304,7 +304,7 @@ document.getElementById("formClima").addEventListener("submit", function (event)
 });
 
 ## syle.css
- /* Define estilos padrão para todos os elementos */
+/* Define estilos padrão para todos os elementos */
 * {
   padding: 0;
   margin: 0;
