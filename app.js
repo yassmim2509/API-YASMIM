@@ -39,4 +39,28 @@ app.get("/climatempo/:cidade", async (req, res) => {
       const climaFormatado = clima.charAt(0).toUpperCase() + clima.slice(1);
       // Gera URLs para ícone e bandeira do país
       const icon = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
-      const flag = `https://
+      const flag = `https://flagsapi.com/${response.data.sys.country}/flat/64.png`;
+
+      // Cria um objeto com os dados meteorológicos formatados
+      const watherData = {
+        Temperatura: response.data.main.temp_min,
+        Umidade: response.data.main.humidity,
+        VelocidadeDoVento: response.data.wind.speed,
+        Clima: climaFormatado,
+        Icone: icon,
+        Flag: flag,
+      };
+
+      // Envia os dados meteorológicos formatados como resposta
+      res.send(watherData);
+    } else {
+      // Se a solicitação não for bem-sucedida, envia um erro como resposta
+      res
+        .status(response.status)
+        .send({ erro: "Erro ao obter dados metereológicos" });
+    }
+  } catch (error) {
+    // Se ocorrer um erro durante a solicitação, envia um erro interno do servidor como resposta, junto com detalhes do erro
+    res.status(500).send({ erro: "Erro ao obter dados metereológicos", error });
+  }
+});
